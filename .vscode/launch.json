@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: myapp",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "myapp",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

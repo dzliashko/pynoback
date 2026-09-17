@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Python: check all",
+            "type": "shell",
+            "command": "uv run ruff format --check . && uv run ruff check . && uv run mypy . && uv run pytest",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: format + fix",
+            "type": "shell",
+            "command": "uv run ruff format . && uv run ruff check --fix .",
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: tests",
+            "type": "shell",
+            "command": "uv run pytest",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: coverage",
+            "type": "shell",
+            "command": "uv run pytest --cov=myapp --cov-report=term-missing",
+            "problemMatcher": []
+        }
+    ]
+}
