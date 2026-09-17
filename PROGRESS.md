@@ -16,7 +16,7 @@ Target stack:
 
 Starting level:
 
-`Not assessed yet`
+`Assessment in progress: basic conditions, list iteration, accumulation, and function return demonstrated independently; dictionaries and traceback reading still to assess.`
 
 Approximate study time:
 
@@ -24,7 +24,7 @@ Approximate study time:
 
 Study start:
 
-`Not started yet`
+`2026-09-17`
 
 ---
 
@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Initial level assessment`
+`Initial level assessment — dictionaries next, then traceback reading`
 
 ## Current exercise
 
-None.
+Completed `count_nonempty_feeds(unread_counts)` in `src/pynoback/main.py`. Session paused at the student's request; no new exercise assigned.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ None.
 
 ## Recommended next action
 
-Assess current Python level, confirm the local environment, and select the first topic from `STUDY_PLAN.md` that is not already understood.
+Resume with a small dictionary exercise, then assess traceback reading. Finish Phase 0 assessment before selecting the first appropriate study topic. Environment execution was verified (system Python 3.14.4, local `.venv` Python 3.14.7, uv available); the student's understanding of virtual environments and script execution is not yet assessed.
 
 ---
 
@@ -154,13 +154,19 @@ None yet.
 
 # Topics in progress
 
-None yet.
+Phase 0 — initial Python assessment.
 
 ---
 
 # Exercises
 
-No exercises completed yet.
+2026-09-17 — three assessment exercises completed independently without hints:
+
+- Predicted assignment/condition program output correctly: `Немного`, `3`, `2`. No follow-up explanation required under the student's updated preference.
+- Summed `[3, 0, 5, 2]` using a `for` loop and accumulator without `sum()`; execution returned `10`.
+- Implemented `count_nonempty_feeds` with a loop, condition, and `return`; execution produced `3`, `0`, `0` for the three specified cases, including an empty list. Printing is outside the function.
+
+The latest exercise replaces the earlier loop exercise in `src/pynoback/main.py`. These are assessment exercises, not implemented backend features.
 
 For completed exercises, use this format:
 
@@ -259,7 +265,7 @@ None recorded yet.
 
 # Concepts understood well
 
-None recorded yet.
+Demonstrated in small assessment exercises: conditions, iteration over lists, accumulators, counting matching elements, basic function parameters and return values, and separating printing from a function's result.
 
 Only add a concept here after I have successfully used it more than once or demonstrated it in an assessment.
 
@@ -267,7 +273,7 @@ Only add a concept here after I have successfully used it more than once or demo
 
 # Concepts needing practice
 
-None recorded yet.
+Meaningful loop variable names: both written exercises use `i` for an unread count. Suggested practice: choose names describing the value. This does not block further assessment. Dictionaries and traceback reading remain unassessed, not confirmed weaknesses.
 
 For each concept, include:
 
@@ -515,7 +521,7 @@ For each topic record:
 
 # Assessments
 
-No assessments completed yet.
+Phase 0 assessment started on 2026-09-17 and remains incomplete. Three small exercises passed independently; dictionaries, traceback reading, and practical environment understanding remain to assess. No final starting-level classification yet.
 
 Use assessments at phase checkpoints rather than after every lesson.
 
@@ -534,7 +540,7 @@ Record:
 
 # Learning observations
 
-None yet.
+Ask understanding follow-ups only after incorrect answers. After each completed exercise, ask whether to continue and wait before assigning the next task. The student requested a pause until tomorrow after the function exercise.
 
 Keep this section concise.
 

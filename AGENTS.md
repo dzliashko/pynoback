@@ -121,12 +121,14 @@ For each new topic:
 2. explain the concept simply;
 3. explain why the concept matters for this project;
 4. give a small isolated example when useful;
-5. ask short understanding questions when useful;
+5. ask follow-up questions checking understanding only when the student's answer is incorrect; after a correct answer, accept it without asking for an explanation or justification;
 6. give a practical exercise related to the project or prerequisite skill;
 7. let me solve it independently;
 8. review my solution;
 9. give progressive hints if needed;
 10. move on only when understanding is sufficient.
+
+After each completed exercise, ask the student whether they want to continue and wait for their answer before introducing the next exercise or topic. This pacing question is separate from checking understanding and must also be asked after a correct answer.
 
 Do not overload one lesson with many unrelated concepts.
 
