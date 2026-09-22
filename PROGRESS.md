@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Phase 0.2 completed; Phase 0.1 script execution and installed-package inspection demonstrated`
+`Phase 0 practical onboarding complete for starting lessons; ready for Phase 1 types and conversions`
 
 ## Current exercise
 
-Completed guided package inspection: the student reported pytest version `9.1.1` and location `/home/dl/w/pynoback/.venv/lib/python3.14/site-packages` after being given `uv pip show --python .venv/bin/python pytest`. Awaiting the student's decision to continue; no new exercise assigned.
+Completed guided dependency synchronization: `uv sync --locked` succeeded (16 packages resolved, 15 checked), followed by `.venv/bin/python -m pytest --version` returning `pytest 9.1.1`. Awaiting the student's decision to continue; no new exercise assigned.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed guided package inspection: the student reported pytest version `9.1.1`
 
 ## Recommended next action
 
-After the student agrees to continue, practice installing a package in an isolated environment with one small task. Script execution and guided inspection of an installed package are demonstrated; package installation has not yet been practiced. Environment isolation has been explained but not independently demonstrated. Then choose a focused lesson to extend the demonstrated Python basics rather than repeating all of Phase 1.
+After the student agrees to continue, start Phase 1 topic 1 with types and type conversion, especially string input versus numeric values, which were not covered by the assessment. Basic environment operations are sufficient to proceed. Revisit independent environment creation and adding dependencies when the project needs them; do not infer mastery from guided commands.
 
 ---
 
@@ -150,11 +150,13 @@ A meaningful feature is designed, tested, and implemented mostly independently.
 
 Phase 0.2 — initial assessment completed on 2026-09-22. This does not mark all later fundamentals topics as mastered.
 
+Phase 0.1 — practical onboarding sufficient for lessons: script execution, installed-package inspection, and dependency synchronization completed. Used the existing uv workflow in place of standalone pip. No new package installation or independent environment creation demonstrated; revisit when needed.
+
 ---
 
 # Topics in progress
 
-Phase 0.1 — script execution and guided package inspection demonstrated; package installation and practical environment isolation remain.
+Transition from Phase 0 to Phase 1, pending the student's agreement to continue.
 
 ---
 
@@ -176,6 +178,8 @@ The latest exercise replaces the earlier loop exercise in `src/pynoback/main.py`
 Environment exercise completed without hints: the student supplied `python --version` (Python 3.14.7, activated environment) and `uv run src/pynoback/main.py`, with expected output `3`, `0`, `0`, and the two unread titles. Evidence is the terminal output supplied by the student. No execution errors reported.
 
 Guided package inspection completed: after receiving the exact `uv pip show --python .venv/bin/python pytest` command, the student supplied `Version: 9.1.1` and `Location: /home/dl/w/pynoback/.venv/lib/python3.14/site-packages`. Correctly extracted the requested fields. This verifies completion of the guided inspection, not independent command selection or package installation.
+
+Guided dependency synchronization completed: the student supplied successful output from `uv sync --locked` (`Resolved 16 packages`, `Checked 15 packages`) and `.venv/bin/python -m pytest --version` (`pytest 9.1.1`). Existing dependencies required no installation. Demonstrates following the synchronization workflow and launching a package through the selected interpreter; no independent package installation was tested.
 
 For completed exercises, use this format:
 
@@ -576,4 +580,4 @@ Record things such as:
 
 # Next milestone
 
-Complete Phase 0.1 environment verification, then begin the next appropriate topic in `STUDY_PLAN.md` based on the assessment.
+Begin Phase 1 topic 1 with types and conversions after the student agrees to continue; build on the independently demonstrated basics.
