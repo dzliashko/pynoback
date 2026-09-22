@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Phase 0.2 completed; Phase 0.1 script execution demonstrated, package management next`
+`Phase 0.2 completed; Phase 0.1 script execution and installed-package inspection demonstrated`
 
 ## Current exercise
 
-Completed the environment execution exercise: the student reported `python --version` yielding Python 3.14.7 in the activated environment and `uv run src/pynoback/main.py` yielding the expected results. Awaiting the student's decision to continue; no new exercise assigned.
+Completed guided package inspection: the student reported pytest version `9.1.1` and location `/home/dl/w/pynoback/.venv/lib/python3.14/site-packages` after being given `uv pip show --python .venv/bin/python pytest`. Awaiting the student's decision to continue; no new exercise assigned.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed the environment execution exercise: the student reported `python --ver
 
 ## Recommended next action
 
-After the student agrees to continue, introduce or assess package management in the project environment with one small task. Script execution is demonstrated; broader understanding of environment isolation and package installation remains to establish. Then choose a focused lesson to extend the demonstrated Python basics rather than repeating all of Phase 1.
+After the student agrees to continue, practice installing a package in an isolated environment with one small task. Script execution and guided inspection of an installed package are demonstrated; package installation has not yet been practiced. Environment isolation has been explained but not independently demonstrated. Then choose a focused lesson to extend the demonstrated Python basics rather than repeating all of Phase 1.
 
 ---
 
@@ -154,7 +154,7 @@ Phase 0.2 — initial assessment completed on 2026-09-22. This does not mark all
 
 # Topics in progress
 
-Phase 0.1 — script execution demonstrated; package management and environment isolation remain.
+Phase 0.1 — script execution and guided package inspection demonstrated; package installation and practical environment isolation remain.
 
 ---
 
@@ -174,6 +174,8 @@ The latest exercise replaces the earlier loop exercise in `src/pynoback/main.py`
 - Read a supplied traceback correctly: identified `KeyError`, located the failure on line 2 inside `get_article_title`, and proposed adding `"title": "Космос"` to the input dictionary.
 
 Environment exercise completed without hints: the student supplied `python --version` (Python 3.14.7, activated environment) and `uv run src/pynoback/main.py`, with expected output `3`, `0`, `0`, and the two unread titles. Evidence is the terminal output supplied by the student. No execution errors reported.
+
+Guided package inspection completed: after receiving the exact `uv pip show --python .venv/bin/python pytest` command, the student supplied `Version: 9.1.1` and `Location: /home/dl/w/pynoback/.venv/lib/python3.14/site-packages`. Correctly extracted the requested fields. This verifies completion of the guided inspection, not independent command selection or package installation.
 
 For completed exercises, use this format:
 
