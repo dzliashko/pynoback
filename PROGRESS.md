@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 2 — conditions completed in small exercises; ready for topic 3 loops`
+`Topic 3 — loops: first while exercise completed after a hint`
 
 ## Current exercise
 
-Completed `describe_unread_level(count)` in `src/pynoback/unread_level.py`: correct ordered `if`/`elif`/`else` classification. All six boundary checks passed (0, 1, 10, 11, 50, 51). Awaiting the student's decision to continue.
+Completed `src/pynoback/reading_session.py` after revision: checks `counter > 0`, decrements once inside each iteration, then prints the remaining count. Exact output and termination checks passed for 3, 1, and 0. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `describe_unread_level(count)` in `src/pynoback/unread_level.py`: corr
 
 ## Recommended next action
 
-After the student agrees to continue, begin topic 3 with a small `while` lesson and exercise, including updating the loop condition to ensure termination. Basic `for` loops and accumulators have already been demonstrated; revisit them in later mixed practice. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, reinforce `while` with a small new exercise that updates state toward a target, checking initial, final, and boundary states. Do this before introducing `break` and `continue`. Basic `for` loops and accumulators have already been demonstrated. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -158,7 +158,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 — types and conditions practiced. Topic 2 completed at the current exercise level; ready for topic 3. Basic `for` loops and accumulators are already demonstrated, while `while`, `break`, and `continue` remain to cover.
+Phase 1 topic 3 — basic `for` loops and accumulators demonstrated; first `while` exercise completed after feedback on state updates and termination. Reinforce `while` before introducing `break` and `continue`.
 
 ---
 
@@ -198,6 +198,8 @@ Article visibility exercise completed independently after the lesson: `should_sh
 Reading queue exercise completed: `should_add_to_queue(article)` in `src/pynoback/reading_queue.py` correctly excludes read articles and requires either a star or a saved flag for unread articles. All eight combinations passed with actual boolean return values. The student independently wrote the rule and grouped the `or` expression correctly. Assistance was limited to supplying all eight input dictionaries at the student's explicit request; no solution hints or tutor code edits. Printing remains outside the function.
 
 Unread level exercise completed independently: `describe_unread_level(count)` in `src/pynoback/unread_level.py` uses an ordered `if`/`elif`/`else` chain with thresholds 0, 10, and 50. All six requested boundary cases passed (0, 1, 10, 11, 50, 51). Upper-bound-only checks correctly rely on earlier branches. The student supplied every requested example in a tuple and prints results outside the function. No issues, hints, or tutor code changes; tuple mastery is not inferred from this usage alone.
+
+Reading session exercise completed with a hint: the first version printed the correct output but decremented before the loop and ended at -1. Feedback pointed to the counter's meaning and suggested tracing input 1; no corrected code was supplied. The student moved the decrement inside a `while counter > 0` loop and now ends at zero, skipping the loop for input zero. Exact output and termination verified for 3, 1, and 0. Needs spaced repetition with a different state-update exercise; this is one corrected mistake, not a recurring pattern. No tutor code edits.
 
 For completed exercises, use this format:
 
@@ -598,4 +600,4 @@ Record things such as:
 
 # Next milestone
 
-Begin Phase 1 topic 3 with `while` and loop termination, after the student agrees to continue.
+Reinforce Phase 1 topic 3 with another small `while` exercise on state updates and boundaries, after the student agrees to continue.
