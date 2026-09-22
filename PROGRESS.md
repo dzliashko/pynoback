@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 2 — conditions: grouped expressions using and, or, and not demonstrated`
+`Topic 2 — conditions completed in small exercises; ready for topic 3 loops`
 
 ## Current exercise
 
-Completed `should_add_to_queue(article)` in `src/pynoback/reading_queue.py`: correctly combines `not`, `and`, and a parenthesized `or` group. All eight boolean combinations passed. The student wrote the decision logic; the tutor supplied the eight input dictionaries on request. Awaiting the student's decision to continue.
+Completed `describe_unread_level(count)` in `src/pynoback/unread_level.py`: correct ordered `if`/`elif`/`else` classification. All six boundary checks passed (0, 1, 10, 11, 50, 51). Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `should_add_to_queue(article)` in `src/pynoback/reading_queue.py`: cor
 
 ## Recommended next action
 
-After the student agrees to continue, practice `if`/`elif`/`else` with a small classification task, explaining first-matching-branch behavior and checking boundaries. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, begin topic 3 with a small `while` lesson and exercise, including updating the loop condition to ensure termination. Basic `for` loops and accumulators have already been demonstrated; revisit them in later mixed practice. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -148,6 +148,8 @@ A meaningful feature is designed, tested, and implemented mostly independently.
 
 # Completed topics
 
+Phase 1 topic 2 — conditions: comparisons, boolean operators, grouping, and ordered `if`/`elif`/`else` branches demonstrated across multiple exercises. Continue spaced repetition in later tasks.
+
 Phase 0.2 — initial assessment completed on 2026-09-22. This does not mark all later fundamentals topics as mastered.
 
 Phase 0.1 — practical onboarding sufficient for lessons: script execution, installed-package inspection, and dependency synchronization completed. Used the existing uv workflow in place of standalone pip. No new package installation or independent environment creation demonstrated; revisit when needed.
@@ -156,7 +158,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, distinguishing `None` from zero, and grouped boolean expressions with `and`, `or`, and `not` demonstrated. Topic 2 continues with `if`/`elif`/`else`.
+Phase 1 — types and conditions practiced. Topic 2 completed at the current exercise level; ready for topic 3. Basic `for` loops and accumulators are already demonstrated, while `while`, `break`, and `continue` remain to cover.
 
 ---
 
@@ -194,6 +196,8 @@ Article retention exercise completed independently after the lesson: `should_kee
 Article visibility exercise completed independently after the lesson: `should_show(article)` in `src/pynoback/article_visibility.py` directly returns `is_starred and not is_read`. All four combinations passed with actual boolean results. The student's list covers all combinations, and printing stays outside the function. No issues, hints, or tutor code changes. Simple boolean exercises have been solved consistently; next exercise should require composing a slightly broader rule.
 
 Reading queue exercise completed: `should_add_to_queue(article)` in `src/pynoback/reading_queue.py` correctly excludes read articles and requires either a star or a saved flag for unread articles. All eight combinations passed with actual boolean return values. The student independently wrote the rule and grouped the `or` expression correctly. Assistance was limited to supplying all eight input dictionaries at the student's explicit request; no solution hints or tutor code edits. Printing remains outside the function.
+
+Unread level exercise completed independently: `describe_unread_level(count)` in `src/pynoback/unread_level.py` uses an ordered `if`/`elif`/`else` chain with thresholds 0, 10, and 50. All six requested boundary cases passed (0, 1, 10, 11, 50, 51). Upper-bound-only checks correctly rely on earlier branches. The student supplied every requested example in a tuple and prints results outside the function. No issues, hints, or tutor code changes; tuple mastery is not inferred from this usage alone.
 
 For completed exercises, use this format:
 
@@ -594,4 +598,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 2 with `if`/`elif`/`else` and boundary cases, after the student agrees to continue.
+Begin Phase 1 topic 3 with `while` and loop termination, after the student agrees to continue.
