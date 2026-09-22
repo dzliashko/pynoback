@@ -16,7 +16,7 @@ Target stack:
 
 Starting level:
 
-`Assessment in progress: basic conditions, list iteration, accumulation, and function return demonstrated independently; dictionaries and traceback reading still to assess.`
+`Beginner with working Python basics: independently solved small exercises on assignment, conditions, loops, functions, lists, dictionary access, and reading a simple traceback. Broader mastery is not yet established.`
 
 Approximate study time:
 
@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Initial level assessment — dictionaries next, then traceback reading`
+`Phase 0.2 completed; Phase 0.1 script execution demonstrated, package management next`
 
 ## Current exercise
 
-Completed `count_nonempty_feeds(unread_counts)` in `src/pynoback/main.py`. Session paused at the student's request; no new exercise assigned.
+Completed the environment execution exercise: the student reported `python --version` yielding Python 3.14.7 in the activated environment and `uv run src/pynoback/main.py` yielding the expected results. Awaiting the student's decision to continue; no new exercise assigned.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `count_nonempty_feeds(unread_counts)` in `src/pynoback/main.py`. Sessi
 
 ## Recommended next action
 
-Resume with a small dictionary exercise, then assess traceback reading. Finish Phase 0 assessment before selecting the first appropriate study topic. Environment execution was verified (system Python 3.14.4, local `.venv` Python 3.14.7, uv available); the student's understanding of virtual environments and script execution is not yet assessed.
+After the student agrees to continue, introduce or assess package management in the project environment with one small task. Script execution is demonstrated; broader understanding of environment isolation and package installation remains to establish. Then choose a focused lesson to extend the demonstrated Python basics rather than repeating all of Phase 1.
 
 ---
 
@@ -148,13 +148,13 @@ A meaningful feature is designed, tested, and implemented mostly independently.
 
 # Completed topics
 
-None yet.
+Phase 0.2 — initial assessment completed on 2026-09-22. This does not mark all later fundamentals topics as mastered.
 
 ---
 
 # Topics in progress
 
-Phase 0 — initial Python assessment.
+Phase 0.1 — script execution demonstrated; package management and environment isolation remain.
 
 ---
 
@@ -167,6 +167,13 @@ Phase 0 — initial Python assessment.
 - Implemented `count_nonempty_feeds` with a loop, condition, and `return`; execution produced `3`, `0`, `0` for the three specified cases, including an empty list. Printing is outside the function.
 
 The latest exercise replaces the earlier loop exercise in `src/pynoback/main.py`. These are assessment exercises, not implemented backend features.
+
+2026-09-22 — two additional assessment exercises completed independently without hints:
+
+- Implemented `get_unread_titles(articles)` using dictionary keys, a loop, and `append`, returning titles in input order. Four execution checks passed: mixed, empty, all read, and all unread inputs. Used the meaningful loop variable `article`. Optional style feedback: prefer `not` to comparison with `False`.
+- Read a supplied traceback correctly: identified `KeyError`, located the failure on line 2 inside `get_article_title`, and proposed adding `"title": "Космос"` to the input dictionary.
+
+Environment exercise completed without hints: the student supplied `python --version` (Python 3.14.7, activated environment) and `uv run src/pynoback/main.py`, with expected output `3`, `0`, `0`, and the two unread titles. Evidence is the terminal output supplied by the student. No execution errors reported.
 
 For completed exercises, use this format:
 
@@ -265,7 +272,7 @@ None recorded yet.
 
 # Concepts understood well
 
-Demonstrated in small assessment exercises: conditions, iteration over lists, accumulators, counting matching elements, basic function parameters and return values, and separating printing from a function's result.
+Demonstrated in small assessment exercises: conditions, iteration over lists, accumulators, counting matching elements, basic function parameters and return values, separating printing from a function's result, dictionary key access, building a filtered list, and locating a missing-key failure from a traceback.
 
 Only add a concept here after I have successfully used it more than once or demonstrated it in an assessment.
 
@@ -273,7 +280,7 @@ Only add a concept here after I have successfully used it more than once or demo
 
 # Concepts needing practice
 
-Meaningful loop variable names: both written exercises use `i` for an unread count. Suggested practice: choose names describing the value. This does not block further assessment. Dictionaries and traceback reading remain unassessed, not confirmed weaknesses.
+Meaningful loop variable names: the first two written exercises used `i` for an unread count; the latest exercise improved this with `article`. Continue reinforcing descriptive names. Optional boolean style practice: use `not` instead of `== False`. No correctness weaknesses found in the assessment; untested topics are not confirmed weaknesses.
 
 For each concept, include:
 
@@ -308,7 +315,7 @@ Possible examples:
 
 ## Current level
 
-`Not assessed`
+`Can read a simple KeyError traceback, locate the failing line, and identify a missing dictionary key. Other debugging skills remain unassessed.`
 
 Track progress in:
 
@@ -521,7 +528,7 @@ For each topic record:
 
 # Assessments
 
-Phase 0 assessment started on 2026-09-17 and remains incomplete. Three small exercises passed independently; dictionaries, traceback reading, and practical environment understanding remain to assess. No final starting-level classification yet.
+Phase 0.2 assessment completed on 2026-09-22: five small exercises passed independently without hints, covering all six requested areas (variables, conditions, loops, functions, lists/dictionaries, traceback reading). Starting level: beginner with working basics. Strengths: correct iteration, filtering, return placement, and interpreting a simple traceback. Improvements: naming and boolean style. Phase 0.1 practical environment skills remain to assess; larger problem decomposition and backend design were not tested.
 
 Use assessments at phase checkpoints rather than after every lesson.
 
@@ -540,7 +547,9 @@ Record:
 
 # Learning observations
 
-Ask understanding follow-ups only after incorrect answers. After each completed exercise, ask whether to continue and wait before assigning the next task. The student requested a pause until tomorrow after the function exercise.
+Ask understanding follow-ups only after incorrect answers. After each completed exercise, ask whether to continue and wait before assigning the next task. Study resumed on 2026-09-22 after the earlier pause.
+
+The student authorizes recording progress, committing relevant changes, and pushing after every completed exercise without repeated permission requests.
 
 Keep this section concise.
 
@@ -565,4 +574,4 @@ Record things such as:
 
 # Next milestone
 
-Complete the initial Python assessment and begin the first appropriate topic in `STUDY_PLAN.md`.
+Complete Phase 0.1 environment verification, then begin the next appropriate topic in `STUDY_PLAN.md` based on the assessment.

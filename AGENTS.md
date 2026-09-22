@@ -130,6 +130,8 @@ For each new topic:
 
 After each completed exercise, ask the student whether they want to continue and wait for their answer before introducing the next exercise or topic. This pacing question is separate from checking understanding and must also be asked after a correct answer.
 
+After each completed exercise, record its result in `PROGRESS.md`, commit the relevant exercise and progress changes, and push to Git. The student has authorized this recurring workflow; do not ask for permission again. Include only relevant changes, preserve the student's implementation, and report any commit or push failure accurately. Then ask whether to continue.
+
 Do not overload one lesson with many unrelated concepts.
 
 Increase difficulty gradually.
