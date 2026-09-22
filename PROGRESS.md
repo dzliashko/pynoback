@@ -32,15 +32,15 @@ Study start:
 
 ## Current phase
 
-`Phase 0 — Initial assessment and environment`
+`Phase 1 — Python fundamentals`
 
 ## Current topic
 
-`Phase 0 practical onboarding complete for starting lessons; ready for Phase 1 types and conversions`
+`Topic 1 — types and conversions: string input to integers demonstrated`
 
 ## Current exercise
 
-Completed guided dependency synchronization: `uv sync --locked` succeeded (16 packages resolved, 15 checked), followed by `.venv/bin/python -m pytest --version` returning `pytest 9.1.1`. Awaiting the student's decision to continue; no new exercise assigned.
+Completed `src/pynoback/article_counts.py`: reads two values, converts each with `int`, adds them, and displays counts using f-strings. Execution verified for inputs 12 and 3 (total 15), and 0 and 0 (total 0). Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed guided dependency synchronization: `uv sync --locked` succeeded (16 pa
 
 ## Recommended next action
 
-After the student agrees to continue, start Phase 1 topic 1 with types and type conversion, especially string input versus numeric values, which were not covered by the assessment. Basic environment operations are sufficient to proceed. Revisit independent environment creation and adding dependencies when the project needs them; do not infer mastery from guided commands.
+After the student agrees to continue, extend topic 1 with a small lesson on `float` and numeric calculations. Reinforce clear input prompts when revisiting console interaction. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -58,7 +58,7 @@ After the student agrees to continue, start Phase 1 topic 1 with types and type 
 
 Status:
 
-`Not started`
+`In progress`
 
 Expected outcome:
 
@@ -156,7 +156,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Transition from Phase 0 to Phase 1, pending the student's agreement to continue.
+Phase 1 topic 1 — types, expressions, input, and conversions. Integer conversion from input demonstrated; other types remain to cover.
 
 ---
 
@@ -180,6 +180,8 @@ Environment exercise completed without hints: the student supplied `python --ver
 Guided package inspection completed: after receiving the exact `uv pip show --python .venv/bin/python pytest` command, the student supplied `Version: 9.1.1` and `Location: /home/dl/w/pynoback/.venv/lib/python3.14/site-packages`. Correctly extracted the requested fields. This verifies completion of the guided inspection, not independent command selection or package installation.
 
 Guided dependency synchronization completed: the student supplied successful output from `uv sync --locked` (`Resolved 16 packages`, `Checked 15 packages`) and `.venv/bin/python -m pytest --version` (`pytest 9.1.1`). Existing dependencies required no installation. Demonstrates following the synchronization workflow and launching a package through the selected interpreter; no independent package installation was tested.
+
+Article counts exercise completed independently after the lesson: `src/pynoback/article_counts.py` correctly converts both input strings to integers and sums them. Both requested execution cases passed (12 + 3 = 15; 0 + 0 = 0). Meaningful names and f-string formatting used. Optional usability feedback: `input()` has no prompt, so labels appear only after both values are entered. No code changed by the tutor; no hints required for the arithmetic or conversions.
 
 For completed exercises, use this format:
 
@@ -580,4 +582,4 @@ Record things such as:
 
 # Next milestone
 
-Begin Phase 1 topic 1 with types and conversions after the student agrees to continue; build on the independently demonstrated basics.
+Continue Phase 1 topic 1 with numeric types after the student agrees to continue; build on demonstrated integer input conversion.
