@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 2 — conditions: and, or, and not demonstrated in small exercises`
+`Topic 2 — conditions: grouped expressions using and, or, and not demonstrated`
 
 ## Current exercise
 
-Completed `should_show(article)` in `src/pynoback/article_visibility.py`: correctly combines `and` and `not`. All four boolean combinations passed, with actual boolean return values verified. Awaiting the student's decision to continue.
+Completed `should_add_to_queue(article)` in `src/pynoback/reading_queue.py`: correctly combines `not`, `and`, and a parenthesized `or` group. All eight boolean combinations passed. The student wrote the decision logic; the tutor supplied the eight input dictionaries on request. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `should_show(article)` in `src/pynoback/article_visibility.py`: correc
 
 ## Recommended next action
 
-After the student agrees to continue, increase difficulty slightly with a small rule combining `and`, `or`, and `not`; explain parentheses for grouping and let the student choose the expression from requirements. Then practice `if`/`elif`/`else` before closing topic 2. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, practice `if`/`elif`/`else` with a small classification task, explaining first-matching-branch behavior and checking boundaries. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -156,7 +156,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, distinguishing `None` from zero, and boolean expressions with `and`, `or`, and `not` demonstrated. Topic 2 continues with grouping combined expressions and `if`/`elif`/`else`.
+Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, distinguishing `None` from zero, and grouped boolean expressions with `and`, `or`, and `not` demonstrated. Topic 2 continues with `if`/`elif`/`else`.
 
 ---
 
@@ -192,6 +192,8 @@ Refresh rule exercise completed independently after the lesson: `should_refresh(
 Article retention exercise completed independently after the lesson: `should_keep(article)` in `src/pynoback/article_selection.py` correctly returns `is_starred or is_saved`. All four combinations passed, including both flags true; actual boolean return values verified. The student's example list covers every combination and prints results outside the function. No issues, hints, or tutor code changes.
 
 Article visibility exercise completed independently after the lesson: `should_show(article)` in `src/pynoback/article_visibility.py` directly returns `is_starred and not is_read`. All four combinations passed with actual boolean results. The student's list covers all combinations, and printing stays outside the function. No issues, hints, or tutor code changes. Simple boolean exercises have been solved consistently; next exercise should require composing a slightly broader rule.
+
+Reading queue exercise completed: `should_add_to_queue(article)` in `src/pynoback/reading_queue.py` correctly excludes read articles and requires either a star or a saved flag for unread articles. All eight combinations passed with actual boolean return values. The student independently wrote the rule and grouped the `or` expression correctly. Assistance was limited to supplying all eight input dictionaries at the student's explicit request; no solution hints or tutor code edits. Printing remains outside the function.
 
 For completed exercises, use this format:
 
@@ -592,4 +594,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 2 with grouping combined conditions, then `if`/`elif`/`else`, after the student agrees to continue.
+Continue Phase 1 topic 2 with `if`/`elif`/`else` and boundary cases, after the student agrees to continue.
