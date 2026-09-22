@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 1 — integer/float conversion and distinguishing None from zero demonstrated; ready to extend conditions`
+`Topic 2 — conditions: boolean values and and demonstrated`
 
 ## Current exercise
 
-Completed `describe_unread(feed)` in `src/pynoback/feed_status.py`: correctly returns different strings for `None`, zero, and positive counts. Five execution checks passed. Awaiting the student's decision to continue.
+Completed `should_refresh(feed)` in `src/pynoback/refresh_rules.py`: returns the conjunction of an enabled flag and an elapsed-time threshold. Seven execution checks passed, including boundary and disabled cases; return values are actual booleans. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `describe_unread(feed)` in `src/pynoback/feed_status.py`: correctly re
 
 ## Recommended next action
 
-After the student agrees to continue, begin topic 2 with boolean values and combining conditions using `and`, building on demonstrated simple conditions and `None` handling. Introduce `or` and `not` gradually. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, extend topic 2 with `or`, including the case where both conditions are true. Introduce `not` and combined expressions gradually. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -156,7 +156,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, and distinguishing `None` from zero demonstrated. Ready to extend conditions with boolean operators.
+Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, distinguishing `None` from zero, and boolean conjunction with `and` demonstrated. Topic 2 continues with `or` and `not`.
 
 ---
 
@@ -186,6 +186,8 @@ Article counts exercise completed independently after the lesson: `src/pynoback/
 Refresh duration exercise completed independently after the lesson: `src/pynoback/refresh_time.py` correctly uses `float`, adds durations, and divides the total by two. Execution checks passed: 1.5 and 2.5 produce total 4.0 and average 2.0; 0 and 3 produce total 3.0 and average 1.5. Clear input prompts address earlier usability feedback. Optional naming feedback: use `feed` rather than `thread` for an RSS feed. No tutor code changes or solution hints.
 
 Missing-value exercise completed independently after the lesson: `describe_unread(feed)` in `src/pynoback/feed_status.py` uses `is None`, checks zero separately, and returns a formatted string for positive counts. Five checks passed for `None`, 0, 5, 1, and 27. Early returns correctly separate branches; printing is outside the function. No issues, hints, or tutor code changes.
+
+Refresh rule exercise completed independently after the lesson: `should_refresh(feed)` in `src/pynoback/refresh_rules.py` directly returns `is_enabled and minutes_since_refresh >= 30`. All four requested examples plus disabled-at-30, enabled-at-0, and disabled-at-0 passed, with actual boolean return values verified. The student used a list of cases and a loop to print results outside the function. No issues, hints, or tutor code changes.
 
 For completed exercises, use this format:
 
@@ -586,4 +588,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 with topic 2: boolean values and combining conditions, after the student agrees to continue.
+Continue Phase 1 topic 2 with `or`, after the student agrees to continue.
