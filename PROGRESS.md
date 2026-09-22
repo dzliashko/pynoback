@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 1 — types and conversions: integer and float input demonstrated`
+`Topic 1 — integer/float conversion and distinguishing None from zero demonstrated; ready to extend conditions`
 
 ## Current exercise
 
-Completed `src/pynoback/refresh_time.py`: converts two inputs with `float`, calculates total and average duration, and provides clear input prompts. Both specified execution cases passed. Awaiting the student's decision to continue.
+Completed `describe_unread(feed)` in `src/pynoback/feed_status.py`: correctly returns different strings for `None`, zero, and positive counts. Five execution checks passed. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `src/pynoback/refresh_time.py`: converts two inputs with `float`, calc
 
 ## Recommended next action
 
-After the student agrees to continue, extend topic 1 with a small lesson on `None` as a missing value, contrasting it with zero. Keep the exercise within familiar dictionary and conditional syntax. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, begin topic 2 with boolean values and combining conditions using `and`, building on demonstrated simple conditions and `None` handling. Introduce `or` and `not` gradually. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -156,7 +156,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 1 — types, expressions, input, and conversions. Integer and float conversion, arithmetic, and clear input prompts demonstrated; `None` remains to cover.
+Phase 1 — types and basic conditions practiced. Integer and float conversion, arithmetic, clear input prompts, and distinguishing `None` from zero demonstrated. Ready to extend conditions with boolean operators.
 
 ---
 
@@ -184,6 +184,8 @@ Guided dependency synchronization completed: the student supplied successful out
 Article counts exercise completed independently after the lesson: `src/pynoback/article_counts.py` correctly converts both input strings to integers and sums them. Both requested execution cases passed (12 + 3 = 15; 0 + 0 = 0). Meaningful names and f-string formatting used. Optional usability feedback: `input()` has no prompt, so labels appear only after both values are entered. No code changed by the tutor; no hints required for the arithmetic or conversions.
 
 Refresh duration exercise completed independently after the lesson: `src/pynoback/refresh_time.py` correctly uses `float`, adds durations, and divides the total by two. Execution checks passed: 1.5 and 2.5 produce total 4.0 and average 2.0; 0 and 3 produce total 3.0 and average 1.5. Clear input prompts address earlier usability feedback. Optional naming feedback: use `feed` rather than `thread` for an RSS feed. No tutor code changes or solution hints.
+
+Missing-value exercise completed independently after the lesson: `describe_unread(feed)` in `src/pynoback/feed_status.py` uses `is None`, checks zero separately, and returns a formatted string for positive counts. Five checks passed for `None`, 0, 5, 1, and 27. Early returns correctly separate branches; printing is outside the function. No issues, hints, or tutor code changes.
 
 For completed exercises, use this format:
 
@@ -584,4 +586,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 1 with `None` and missing values after the student agrees to continue.
+Continue Phase 1 with topic 2: boolean values and combining conditions, after the student agrees to continue.
