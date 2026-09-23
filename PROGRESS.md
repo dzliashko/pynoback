@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 4 — functions: deliberate dictionary mutation demonstrated`
+`Topic 4 — functions: bulk state changes and function reuse demonstrated`
 
 ## Current exercise
 
-Completed `mark_as_read(article)` in `src/pynoback/article_state.py`: modifies the original dictionary's read flag, preserves other fields, implicitly returns `None`, and prints nothing. All requested demonstration steps are present. Execution checks passed for unread and already-read input with repeated calls. Awaiting the student's decision to continue.
+Completed `mark_all_as_read(articles)` in `src/pynoback/article_state.py`: counts unread entries before mutation and calls `mark_as_read` for each article. All four requested demonstrations are present and correct. Additional checks passed for empty, all-read, and single-unread inputs, repeated calls, field preservation, and unchanged list order and object identities. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `mark_as_read(article)` in `src/pynoback/article_state.py`: modifies t
 
 ## Recommended next action
 
-After the student agrees to continue, combine familiar iteration and function reuse in a small bulk mark-as-read exercise with a clearly specified changed-item count. Reuse `mark_as_read` in the same file to avoid introducing imports prematurely. Include empty, mixed, and repeated-call cases. Then plan the small Phase 1 console milestone with the student before implementing larger structure.
+After the student agrees to continue, define a small Phase 1 console milestone with a fixed in-memory article list: list unread titles, mark all read, and exit. Ask the student to propose functions and the command loop before implementation, as required for larger structure. Keep persistence, imports, IDs, and new frameworks out of this increment. Use the milestone as mixed practice and a Phase 1 checkpoint.
 
 ---
 
@@ -160,7 +160,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 4 — reusable search, local result initialization, independent repeated calls, decomposition, and deliberate dictionary mutation practiced. Combine these skills in a small state-changing list exercise before planning the console milestone.
+Phase 1 topic 4 — reusable search, local result initialization, independent repeated calls, decomposition, and individual/bulk dictionary mutation practiced. Ready to plan the small console milestone and assess combined use of these skills.
 
 ---
 
@@ -216,6 +216,8 @@ Refresh progress exercise completed independently: `src/pynoback/refresh_progres
 2026-09-23 — starred summary exercise completed independently: `describe_starred(articles)` calls `get_starred_titles`, uses `len`, and returns the required empty/nonempty summary without duplicating filtering. All three requested new calls and five previous calls are retained. Four new-function cases passed (mixed, empty, single starred, all unstarred), with unchanged inputs and no function printing. The student also improved the filter's local result name to `starred_titles`. No issues, hints, or tutor code edits.
 
 2026-09-23 — article read-state exercise completed independently after the lesson: `mark_as_read(article)` in `src/pynoback/article_state.py` sets the passed dictionary's `is_read` to `True`, leaves other fields unchanged, implicitly returns `None`, and has no printing. All requested demonstration steps are present and produce the expected output. Additional checks verified initially unread and already-read dictionaries, extra field preservation, and repeated calls. No issues, hints, or tutor code edits.
+
+2026-09-23 — bulk read-state exercise completed independently: `mark_all_as_read(articles)` counts unread entries before calling `mark_as_read`, returns the change count, and prints nothing. All requested demonstrations produce 2, the fully read list, 0 on repeat, and 0 for empty input. Additional checks passed for all-read and single-unread input, preserved fields/order/object identities, and independent counters. Calling `mark_as_read` for already-read articles is redundant but correct. Earlier single-article demonstrations are retained as comments and no longer run; mention this as a verification limitation. No tutor code changes or hints.
 
 For completed exercises, use this format:
 
@@ -616,4 +618,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 4 with bulk state changes and reuse of `mark_as_read`, after the student agrees to continue.
+Plan the small Phase 1 console milestone with the student, after they agree to continue.
