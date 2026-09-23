@@ -619,3 +619,5 @@ Record things such as:
 # Next milestone
 
 Plan the small Phase 1 console milestone with the student, after they agree to continue.
+
+Session paused at the student's request on 2026-09-23; intended resumption is 2026-09-24. All assigned exercises are complete. Resume with planning a small in-memory console reader (list unread titles, mark all read, exit): ask the student to propose functions and the command loop before writing code. No new exercise assigned during the pause.
