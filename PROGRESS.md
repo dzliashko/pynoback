@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 4 — functions: reusable first-unread search completed after feedback`
+`Topic 4 — functions: local result lists and independent repeated calls demonstrated`
 
 ## Current exercise
 
-Completed `find_first_unread_title(articles)` in `src/pynoback/article_search.py`: returns the first unread title or `None`, with printing outside. All four required example calls are present and produce correct results. Earlier checks also verified no input mutation or function output. Awaiting the student's decision to continue.
+Completed `get_starred_titles(articles)` in `src/pynoback/starred_titles.py`: creates a local result list, returns starred titles in order, and includes all five requested example calls in order. Checks verified expected values, distinct result lists, unchanged inputs, and no printing inside the function. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `find_first_unread_title(articles)` in `src/pynoback/article_search.py
 
 ## Recommended next action
 
-After the student agrees to continue, reinforce topic 4 with a small function using a local result list and independent repeated calls. Practice checking all requested cases before review. Reinforce direct boolean checks and descriptive test-data names. Revisit loop boundaries in mixed practice.
+After the student agrees to continue, introduce decomposition: compose a small function from an existing filtering function, with input/output responsibilities kept separate. Explain pure functions at a basic level using the just-completed example. Reinforce descriptive result names; revisit loop boundaries in mixed practice.
 
 ---
 
@@ -160,7 +160,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 4 — reusable search with parameters, early return, and a `None` fallback completed after feedback. Local scope introduced; reinforce local result initialization and independent calls next.
+Phase 1 topic 4 — reusable search, local result initialization, and independent repeated calls practiced. Ready for decomposition and a basic explanation of pure functions.
 
 ---
 
@@ -210,6 +210,8 @@ Refresh progress exercise completed independently: `src/pynoback/refresh_progres
 2026-09-23 — unread report completed independently: `src/pynoback/unread_report.py` skips read articles with `continue`, appends unread titles in order, increments a counter, and prints both results after the loop. Four checks passed: supplied mixed list, empty list, all read, and all unread. Optional style feedback: use a direct boolean check instead of `== True`, name the title list `unread_titles`, and consider `len` instead of a separate counter. The counter is correct and was not prohibited. No solution hints or tutor code edits.
 
 2026-09-23 — reusable first-unread search completed with feedback: `src/pynoback/article_search.py` initially selected read articles; a hint directed attention to the meaning of `is_read`, and the student corrected the condition. Required example calls were added over subsequent reviews after reminders about missing cases. Final script covers mixed input, all-read input, a single unread article, and an empty list, printing `Космос`, `None`, `Python`, `None`. Earlier execution checks verified independent calls, no input mutation, and no printing inside the function; the function remained unchanged afterward. Uses its parameter rather than external data and returns `None` after the loop. Optional style feedback: prefer `not` to `!= True` and descriptive example names. No tutor code edits. Needs practice checking the full exercise requirements before review; do not infer broad scope mastery from this exercise alone.
+
+2026-09-23 — starred titles exercise completed independently after the lesson: `get_starred_titles(articles)` in `src/pynoback/starred_titles.py` initializes its list inside the function, directly checks the boolean flag, collects titles in order, and returns after the loop. All five requested example calls are present in the requested order, including a repeated mixed-list call. Execution checks verified expected values, distinct result lists for each call, unchanged input data, and no function output. Earlier omissions of required examples did not recur. Optional naming feedback: `starred_titles` describes the local list more precisely than `starred_articles`. No hints or tutor code edits.
 
 For completed exercises, use this format:
 
@@ -610,4 +612,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 4 with local result initialization and independent repeated calls, after the student agrees to continue.
+Continue Phase 1 topic 4 with decomposition and basic pure-function concepts, after the student agrees to continue.
