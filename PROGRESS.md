@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 4 — functions: local result lists and independent repeated calls demonstrated`
+`Topic 4 — functions: decomposition and reuse demonstrated`
 
 ## Current exercise
 
-Completed `get_starred_titles(articles)` in `src/pynoback/starred_titles.py`: creates a local result list, returns starred titles in order, and includes all five requested example calls in order. Checks verified expected values, distinct result lists, unchanged inputs, and no printing inside the function. Awaiting the student's decision to continue.
+Completed `describe_starred(articles)` in `src/pynoback/starred_titles.py`: calls the existing filter, counts its result with `len`, and returns a summary string. All three requested calls and the five earlier calls are present. Four new-function checks passed, with unchanged inputs and no function output. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `get_starred_titles(articles)` in `src/pynoback/starred_titles.py`: cr
 
 ## Recommended next action
 
-After the student agrees to continue, introduce decomposition: compose a small function from an existing filtering function, with input/output responsibilities kept separate. Explain pure functions at a basic level using the just-completed example. Reinforce descriptive result names; revisit loop boundaries in mixed practice.
+After the student agrees to continue, introduce updating a dictionary through a function, explicitly explaining mutation and how it differs from the pure functions practiced so far. Use a small article read-state exercise as preparation for the Phase 1 console milestone. Keep IDs, menu design, and persistence for later steps.
 
 ---
 
@@ -160,7 +160,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 4 — reusable search, local result initialization, and independent repeated calls practiced. Ready for decomposition and a basic explanation of pure functions.
+Phase 1 topic 4 — reusable search, local result initialization, independent repeated calls, and decomposition practiced. Pure functions explained and used; introduce deliberate state changes before the console milestone.
 
 ---
 
@@ -212,6 +212,8 @@ Refresh progress exercise completed independently: `src/pynoback/refresh_progres
 2026-09-23 — reusable first-unread search completed with feedback: `src/pynoback/article_search.py` initially selected read articles; a hint directed attention to the meaning of `is_read`, and the student corrected the condition. Required example calls were added over subsequent reviews after reminders about missing cases. Final script covers mixed input, all-read input, a single unread article, and an empty list, printing `Космос`, `None`, `Python`, `None`. Earlier execution checks verified independent calls, no input mutation, and no printing inside the function; the function remained unchanged afterward. Uses its parameter rather than external data and returns `None` after the loop. Optional style feedback: prefer `not` to `!= True` and descriptive example names. No tutor code edits. Needs practice checking the full exercise requirements before review; do not infer broad scope mastery from this exercise alone.
 
 2026-09-23 — starred titles exercise completed independently after the lesson: `get_starred_titles(articles)` in `src/pynoback/starred_titles.py` initializes its list inside the function, directly checks the boolean flag, collects titles in order, and returns after the loop. All five requested example calls are present in the requested order, including a repeated mixed-list call. Execution checks verified expected values, distinct result lists for each call, unchanged input data, and no function output. Earlier omissions of required examples did not recur. Optional naming feedback: `starred_titles` describes the local list more precisely than `starred_articles`. No hints or tutor code edits.
+
+2026-09-23 — starred summary exercise completed independently: `describe_starred(articles)` calls `get_starred_titles`, uses `len`, and returns the required empty/nonempty summary without duplicating filtering. All three requested new calls and five previous calls are retained. Four new-function cases passed (mixed, empty, single starred, all unstarred), with unchanged inputs and no function printing. The student also improved the filter's local result name to `starred_titles`. No issues, hints, or tutor code edits.
 
 For completed exercises, use this format:
 
@@ -612,4 +614,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 4 with decomposition and basic pure-function concepts, after the student agrees to continue.
+Continue Phase 1 topic 4 with deliberate dictionary state changes through functions, after the student agrees to continue.

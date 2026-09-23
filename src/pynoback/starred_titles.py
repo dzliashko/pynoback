@@ -13,12 +13,20 @@ single_starred_article = [
 ]
 
 
+def describe_starred(articles):
+    starred = get_starred_titles(articles)
+    count = len(starred)
+    if count == 0:
+        return "Избранных статей нет"
+    return f"Избранных статей: {count}"
+
+
 def get_starred_titles(articles):
-    starred_articles = []
+    starred_titles = []
     for article in articles:
         if article["is_starred"]:
-            starred_articles.append(article["title"])
-    return starred_articles
+            starred_titles.append(article["title"])
+    return starred_titles
 
 
 print(get_starred_titles(mixed_articles))
@@ -26,3 +34,7 @@ print(get_starred_titles([]))
 print(get_starred_titles(unstarred_articles))
 print(get_starred_titles(single_starred_article))
 print(get_starred_titles(mixed_articles))
+
+print(describe_starred(mixed_articles))
+print(describe_starred([]))
+print(describe_starred(single_starred_article))
