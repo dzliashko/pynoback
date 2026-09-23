@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 3 — loops: while state updates and boundaries reinforced independently`
+`Topic 3 — loops: break search exercise completed after a hint`
 
 ## Current exercise
 
-Completed `src/pynoback/refresh_progress.py` independently: keeps the total fixed, increments a separate counter inside `while counter < feeds`, and prints progress after each update. Exact output and termination checks passed for 3, 1, and 0. Awaiting the student's decision to continue.
+Completed `src/pynoback/find_unread.py` after revision: initializes a default result, stores the first unread title, stops with `break`, and prints after the loop. All four specified cases passed. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `src/pynoback/refresh_progress.py` independently: keeps the total fixe
 
 ## Recommended next action
 
-After the student agrees to continue, introduce `break` with a small search exercise using familiar lists and dictionaries. Introduce `continue` separately afterward. Revisit loop boundaries in later mixed practice. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, introduce `continue` with a small article-processing exercise, contrasting skipping one iteration with ending the loop. Revisit separating search from output and loop boundaries in later mixed practice. Revisit independent environment creation and adding dependencies when the project needs them.
 
 ---
 
@@ -158,7 +158,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 3 — basic `for` loops and accumulators demonstrated; first `while` exercise revised after feedback, then a new increasing-counter exercise solved independently with correct boundaries. Ready for `break`, then `continue`.
+Phase 1 topic 3 — basic `for` loops and accumulators demonstrated; `while` reinforced with correct boundaries. First-match search using `break` completed after feedback on keeping output outside the loop. Ready for `continue`.
 
 ---
 
@@ -202,6 +202,8 @@ Unread level exercise completed independently: `describe_unread_level(count)` in
 Reading session exercise completed with a hint: the first version printed the correct output but decremented before the loop and ended at -1. Feedback pointed to the counter's meaning and suggested tracing input 1; no corrected code was supplied. The student moved the decrement inside a `while counter > 0` loop and now ends at zero, skipping the loop for input zero. Exact output and termination verified for 3, 1, and 0. Needs spaced repetition with a different state-update exercise; this is one corrected mistake, not a recurring pattern. No tutor code edits.
 
 Refresh progress exercise completed independently: `src/pynoback/refresh_progress.py` keeps the requested total unchanged, starts a separate counter at zero, updates it inside `while counter < feeds`, and prints progress after incrementing. Exact output and termination checks passed for 3, 1, and 0. This successfully reinforces the state-update issue from the prior exercise. Optional naming feedback: `total_feeds` and `refreshed_count` would express the two quantities more clearly than `feeds` and `counter`. No hints or tutor code changes.
+
+2026-09-23 — first unread search completed with a hint: initial `find_unread.py` correctly used `break` and `for ... else`, but printed the found title inside the loop contrary to the exercise requirement. Tutor suggested storing a result without supplying code. The student initialized a default message, assigned the found title, retained `break`, moved printing after the loop, and used `not` instead of `== False`. Checks passed for the supplied mixed list, an empty list, all-read input, and an unread first article. Test inputs were substituted in memory; the student's file was not modified. No correctness issues remain. Revisit separation of processing and output; this is not a recurring error pattern.
 
 For completed exercises, use this format:
 
@@ -602,4 +604,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 3 with `break` in a small search exercise, after the student agrees to continue.
+Continue Phase 1 topic 3 with `continue`, after the student agrees to continue.
