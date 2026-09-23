@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 3 — loops: continue filtering exercise completed; ready for topic 4 functions`
+`Topic 4 — functions: reusable first-unread search completed after feedback`
 
 ## Current exercise
 
-Completed `src/pynoback/unread_report.py`: skips read articles with `continue`, collects unread titles in order, counts them, and prints after the loop. Four execution cases passed. Awaiting the student's decision to continue.
+Completed `find_first_unread_title(articles)` in `src/pynoback/article_search.py`: returns the first unread title or `None`, with printing outside. All four required example calls are present and produce correct results. Earlier checks also verified no input mutation or function output. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `src/pynoback/unread_report.py`: skips read articles with `continue`, 
 
 ## Recommended next action
 
-After the student agrees to continue, begin topic 4 by refactoring a familiar script into a reusable function with parameters and a return value, keeping printing outside. Explain local scope with a small example; basic function syntax was already demonstrated in assessment. Reinforce direct boolean checks and avoiding a redundant counter when list length suffices. Revisit loop boundaries in mixed practice.
+After the student agrees to continue, reinforce topic 4 with a small function using a local result list and independent repeated calls. Practice checking all requested cases before review. Reinforce direct boolean checks and descriptive test-data names. Revisit loop boundaries in mixed practice.
 
 ---
 
@@ -160,7 +160,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 — topic 3 completed at the current exercise level. Ready to deepen topic 4 functions, particularly local scope and separating reusable logic from console output.
+Phase 1 topic 4 — reusable search with parameters, early return, and a `None` fallback completed after feedback. Local scope introduced; reinforce local result initialization and independent calls next.
 
 ---
 
@@ -208,6 +208,8 @@ Refresh progress exercise completed independently: `src/pynoback/refresh_progres
 2026-09-23 — first unread search completed with a hint: initial `find_unread.py` correctly used `break` and `for ... else`, but printed the found title inside the loop contrary to the exercise requirement. Tutor suggested storing a result without supplying code. The student initialized a default message, assigned the found title, retained `break`, moved printing after the loop, and used `not` instead of `== False`. Checks passed for the supplied mixed list, an empty list, all-read input, and an unread first article. Test inputs were substituted in memory; the student's file was not modified. No correctness issues remain. Revisit separation of processing and output; this is not a recurring error pattern.
 
 2026-09-23 — unread report completed independently: `src/pynoback/unread_report.py` skips read articles with `continue`, appends unread titles in order, increments a counter, and prints both results after the loop. Four checks passed: supplied mixed list, empty list, all read, and all unread. Optional style feedback: use a direct boolean check instead of `== True`, name the title list `unread_titles`, and consider `len` instead of a separate counter. The counter is correct and was not prohibited. No solution hints or tutor code edits.
+
+2026-09-23 — reusable first-unread search completed with feedback: `src/pynoback/article_search.py` initially selected read articles; a hint directed attention to the meaning of `is_read`, and the student corrected the condition. Required example calls were added over subsequent reviews after reminders about missing cases. Final script covers mixed input, all-read input, a single unread article, and an empty list, printing `Космос`, `None`, `Python`, `None`. Earlier execution checks verified independent calls, no input mutation, and no printing inside the function; the function remained unchanged afterward. Uses its parameter rather than external data and returns `None` after the loop. Optional style feedback: prefer `not` to `!= True` and descriptive example names. No tutor code edits. Needs practice checking the full exercise requirements before review; do not infer broad scope mastery from this exercise alone.
 
 For completed exercises, use this format:
 
@@ -608,4 +610,4 @@ Record things such as:
 
 # Next milestone
 
-Begin Phase 1 topic 4 with refactoring familiar logic into a reusable function and local scope, after the student agrees to continue.
+Continue Phase 1 topic 4 with local result initialization and independent repeated calls, after the student agrees to continue.
