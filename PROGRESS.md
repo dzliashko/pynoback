@@ -36,11 +36,11 @@ Study start:
 
 ## Current topic
 
-`Topic 3 — loops: break search exercise completed after a hint`
+`Topic 3 — loops: continue filtering exercise completed; ready for topic 4 functions`
 
 ## Current exercise
 
-Completed `src/pynoback/find_unread.py` after revision: initializes a default result, stores the first unread title, stops with `break`, and prints after the loop. All four specified cases passed. Awaiting the student's decision to continue.
+Completed `src/pynoback/unread_report.py`: skips read articles with `continue`, collects unread titles in order, counts them, and prints after the loop. Four execution cases passed. Awaiting the student's decision to continue.
 
 ## Current project milestone
 
@@ -48,7 +48,7 @@ Completed `src/pynoback/find_unread.py` after revision: initializes a default re
 
 ## Recommended next action
 
-After the student agrees to continue, introduce `continue` with a small article-processing exercise, contrasting skipping one iteration with ending the loop. Revisit separating search from output and loop boundaries in later mixed practice. Revisit independent environment creation and adding dependencies when the project needs them.
+After the student agrees to continue, begin topic 4 by refactoring a familiar script into a reusable function with parameters and a return value, keeping printing outside. Explain local scope with a small example; basic function syntax was already demonstrated in assessment. Reinforce direct boolean checks and avoiding a redundant counter when list length suffices. Revisit loop boundaries in mixed practice.
 
 ---
 
@@ -148,6 +148,8 @@ A meaningful feature is designed, tested, and implemented mostly independently.
 
 # Completed topics
 
+Phase 1 topic 3 — `for`, `while`, counters, `break`, and `continue` practiced. The first `while` and `break` exercises required feedback; subsequent `while` and `continue` exercises were solved independently. Continue spaced repetition.
+
 Phase 1 topic 2 — conditions: comparisons, boolean operators, grouping, and ordered `if`/`elif`/`else` branches demonstrated across multiple exercises. Continue spaced repetition in later tasks.
 
 Phase 0.2 — initial assessment completed on 2026-09-22. This does not mark all later fundamentals topics as mastered.
@@ -158,7 +160,7 @@ Phase 0.1 — practical onboarding sufficient for lessons: script execution, ins
 
 # Topics in progress
 
-Phase 1 topic 3 — basic `for` loops and accumulators demonstrated; `while` reinforced with correct boundaries. First-match search using `break` completed after feedback on keeping output outside the loop. Ready for `continue`.
+Phase 1 — topic 3 completed at the current exercise level. Ready to deepen topic 4 functions, particularly local scope and separating reusable logic from console output.
 
 ---
 
@@ -204,6 +206,8 @@ Reading session exercise completed with a hint: the first version printed the co
 Refresh progress exercise completed independently: `src/pynoback/refresh_progress.py` keeps the requested total unchanged, starts a separate counter at zero, updates it inside `while counter < feeds`, and prints progress after incrementing. Exact output and termination checks passed for 3, 1, and 0. This successfully reinforces the state-update issue from the prior exercise. Optional naming feedback: `total_feeds` and `refreshed_count` would express the two quantities more clearly than `feeds` and `counter`. No hints or tutor code changes.
 
 2026-09-23 — first unread search completed with a hint: initial `find_unread.py` correctly used `break` and `for ... else`, but printed the found title inside the loop contrary to the exercise requirement. Tutor suggested storing a result without supplying code. The student initialized a default message, assigned the found title, retained `break`, moved printing after the loop, and used `not` instead of `== False`. Checks passed for the supplied mixed list, an empty list, all-read input, and an unread first article. Test inputs were substituted in memory; the student's file was not modified. No correctness issues remain. Revisit separation of processing and output; this is not a recurring error pattern.
+
+2026-09-23 — unread report completed independently: `src/pynoback/unread_report.py` skips read articles with `continue`, appends unread titles in order, increments a counter, and prints both results after the loop. Four checks passed: supplied mixed list, empty list, all read, and all unread. Optional style feedback: use a direct boolean check instead of `== True`, name the title list `unread_titles`, and consider `len` instead of a separate counter. The counter is correct and was not prohibited. No solution hints or tutor code edits.
 
 For completed exercises, use this format:
 
@@ -604,4 +608,4 @@ Record things such as:
 
 # Next milestone
 
-Continue Phase 1 topic 3 with `continue`, after the student agrees to continue.
+Begin Phase 1 topic 4 with refactoring familiar logic into a reusable function and local scope, after the student agrees to continue.
